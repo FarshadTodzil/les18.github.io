@@ -11,7 +11,39 @@
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <style>  
+        <style>
+        [class*="col-"] {
+            width: 100%;
+        } 
+        body {
+            background-color: red;
+        } @media only screen and (min-width: 768px) {
+            body {
+                background-color: green;
+            }
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+        } 
+        }
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
          .header {
               background-image: url(img/SkylineDenHaag1.jpg);
               background-size: contain;
@@ -22,34 +54,111 @@
               padding: 15px;
               border-radius: 10px;
           }   
+#feiten {
+    background-color: black;
+    min-width: fit-content;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #00FF99;
+}
+img {
+    float: right;
+    border-radius: 15px;
+    padding: 5px;
+    filter: drop-shadow(8px 9px 9px red);
+    max-width: 50%;
+}
+.vredespaleis {
+    background-color: #FFCCFF;
+    border: 2px solid black;
+    padding: 5px 25px 30px 20px;
+    margin: 5%;
+    font-size: x-large;
+    border-radius: 5px;
+}
+.paleis {
+    background-color: #FFCCFF;
+    border: 2px solid black;
+    padding: 5px 25px 30px 20px;
+    margin: 5%; 
+    font-size: x-large;
+    border-radius: 5px;
+}
+article {
+    border: 5px ridge black;
+    padding: 1em;
+    background-color: #009966;
+}
+.feiten {
+    background-color: #FFFFCC;
+    border: 2px solid black;
+    padding: 1em;
+    margin: 2%;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: fit-content;
+    box-shadow: inset 5px 4px 5px black;
+}
+.feiten:hover {
+    background-color: #FFFF33;
+}
+h3 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    border-color: blue;
+    min-width: fit-content;
+}
+h3:hover {
+    background-color: blue;
+    color: black;
+}
+strong {
+    font-size: x-large;
+}
+.footer {
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+     width: 100%;
+    text-align: center;
+    font-size: larger;
+    height: 1.6rem;         
+}
 </style>  
     </head>
 <body>
     <div class="header">
         <h1>Den Haag</h1>
-    </div>   
-
-        <div class="row">
-  <div class="col-2">
-          <h3>5 Weetjes over Den Haag</h3>
-    <div class="weetjes"><strong>1.</strong> Haag was de eerste Europese stad met slimme verkeerslichten. In 1928 werden er op de kruising van de Laan van Meedervoort en de Anna Paulownastraat verkeerslichten geplaats.<br>
+      <div class="row"></div>
+</div>     
+  <div class="col-2"><section id="feiten">
+          <h3>5 feiten over Den Haag</h3>
+    <div class="feiten"><strong>1.</strong> Haag was de eerste Europese stad met slimme verkeerslichten. In 1928 werden er op de kruising van de Laan van Meedervoort en de Anna Paulownastraat verkeerslichten geplaats.<br>
     Op het kruispunt gold een rode overlappingsperiode. In die tijd van zeven seconden stonden alle seinen op rood.
     Waaghalzen die het stopteken negeerden, botsen niet op ander verkeer dat al groen had gekregen.
         </div>
-    <div class="weetjes"><strong>2.</strong> In 1783 werd vanuit de Prinsessetuin (zo heette de Paleistuin vroeger) voor het eerst in Nederland een luchtballon opgelaten.
+    <div class="feiten"><strong>2.</strong> In 1783 werd vanuit de Prinsessetuin (zo heette de Paleistuin vroeger) voor het eerst in Nederland een luchtballon opgelaten.
     Twee jaar later werd de eerste bemande luchtballon in de Paleistuin opgelaten.
     Aan boord zat de ballonvaarder Jean-Pierre Blanchard.
         </div>
-    <div class="weetjes"><strong>3.</strong> Den Haag kreeg in 1806 stadsrechten van Lodewijk Napoleon. Waarom wordt er dan gezegd dat Den Haag geen stadsrechten heeft?
+    <div class="feiten"><strong>3.</strong> Den Haag kreeg in 1806 stadsrechten van Lodewijk Napoleon. Waarom wordt er dan gezegd dat Den Haag geen stadsrechten heeft?
     Omdat in 1798 het stadsrecht was afgeschaft. Napoleon heeft Den Haag gewoon de eretitel 'stad' gegeven.
         </div>
-    <div class="weetjes"><strong>4.</strong> Een deelvan Paleis Huis ten Bosch is ooit verhuurd als bordeel. Na de Franse inval in 1795 werd het paleis gezien als een oorlogsbuit.
+    <div class="feiten"><strong>4.</strong> Een deelvan Paleis Huis ten Bosch is ooit verhuurd als bordeel. Na de Franse inval in 1795 werd het paleis gezien als een oorlogsbuit.
     Huis ten Bosch is vervolgens even een gevangenis geweest. Waarschijnlijk werden er tegenstanders van de Franse revolutie opgesloten.
     Kort daarna is het gebouw gebruikt als een museum en een vleugel werd verhuurd aan een bordeel.
         </div>
-    <div class="weetjes"><strong>5.</strong> Op het Binnenhof was de eerste tennisbaan van Nederland. Tussen de tegels is daar nog een plakkaat van de vinden.
+    <div class="feiten"><strong>5.</strong> Op het Binnenhof was de eerste tennisbaan van Nederland. Tussen de tegels is daar nog een plakkaat van de vinden.
         Tussen 1500 en 1650 werd daar een balletje geslagen.
-       </div>
+       </div></section>
   </div>
 
   <div class="col-9">
@@ -81,9 +190,7 @@
         Tegenwoordig werkt hier koning Willem-Alexander. Als hij in het land is, wappert de vlag, de koninklijke standaard, op het paleis.</p>  
        </div></article>
   </div>
-  </div>
-
-<div class="footer">© Copyright &nbsp;&nbsp; 2023 &nbsp;&nbsp; Farshad Kordi Todzil &nbsp;&nbsp; &nbsp;&nbsp; Alle rechten voorbehouden
-    </div>
+  <div class="footer">© Copyright &nbsp;&nbsp; 2023 &nbsp;&nbsp; Farshad Kordi Todzil &nbsp;&nbsp; &nbsp;&nbsp; Alle rechten voorbehouden
+        </div>
 </body>
 </html>
