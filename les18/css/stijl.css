@@ -1,4 +1,31 @@
-
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+    .header {
+        border-radius: 5px;
+    }
+    h1 {
+        background-size: 100%;
+        text-align: center;
+        font-size: 50px;
+    }
+    #feiten {
+        box-sizing: border-box;
+        background-color: black;
+        width: 400px;
+    }
+    .feiten {
+        margin: 2%;
+    }
+    article {
+        width: 400px;
+    }
+    .footer {
+        font-size: small;
+        width: min-content;
+    }
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -92,27 +119,3 @@ strong {
 }
 
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: red;
-    }
-    h1 {
-        background-size: 100%;
-        text-align: center;
-        font-size: 50px;
-    }
-    #feiten {
-        box-sizing: border-box;
-        background-color: black;
-        width: 450px;
-    }
-    .feiten {
-        margin: 5%;
-    }
-    article {
-        width: 450px;
-    }
-    .footer {
-        font-size: small;
-    }
-}
