@@ -1,17 +1,11 @@
 [class*="col-"] {
-    width: 100%;
-} 
-body {
-    background-color: red;
-} @media only screen and (min-width: 768px) {
-    body {
-        background-color: green;
-    }
-    [class*="col-"] {
-        float: left;
-        padding: 15px;
-        border: 2px solid black;
-} 
+width: 100%;
+}
+@media only screen and (min-width: 768px) {
+[class*="col-"] {
+float: left;
+padding: 15px;
+border: 2px solid black;
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -120,4 +114,9 @@ width: 100%;
 text-align: center;
 font-size: larger;
 height: 1.6rem;         
+}
+    @media only screen and (min-width: 1200px) {
+header{
+background-color: red;
+}
 }
