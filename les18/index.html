@@ -7,138 +7,17 @@
         <meta name="keywords" content="Den Haag, attracties, toeristisch">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Den Haag</title>
+          <link rel="stylesheet" type="text/css" href="css/stijl.css">
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <style>
-        [class*="col-"] {
-            width: 100%;
-        } 
-        body {
-            background-color: red;
-        } @media only screen and (min-width: 768px) {
-            body {
-                background-color: green;
-            }
-            [class*="col-"] {
-                float: left;
-                padding: 15px;
-        } 
-        }
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-         .header {
-              background-image: url(img/SkylineDenHaag1.jpg);
-              background-size: contain;
-              text-align: left;
-              font-size: xx-large;
-              color: white;
-              text-shadow: 3px 4px 2px black;
-              padding: 15px;
-              border-radius: 10px;
-          }   
-#feiten {
-    background-color: black;
-    min-width: fit-content;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #00FF99;
-}
-img {
-    float: right;
-    border-radius: 15px;
-    padding: 5px;
-    filter: drop-shadow(8px 9px 9px red);
-    max-width: 50%;
-}
-.vredespaleis {
-    background-color: #FFCCFF;
-    border: 2px solid black;
-    padding: 5px 25px 30px 20px;
-    margin: 5%;
-    font-size: x-large;
-    border-radius: 5px;
-}
-.paleis {
-    background-color: #FFCCFF;
-    border: 2px solid black;
-    padding: 5px 25px 30px 20px;
-    margin: 5%; 
-    font-size: x-large;
-    border-radius: 5px;
-}
-article {
-    border: 5px ridge black;
-    padding: 1em;
-    background-color: #009966;
-}
-.feiten {
-    background-color: #FFFFCC;
-    border: 2px solid black;
-    padding: 1em;
-    margin: 2%;
-    max-width: 100%;
-    max-height: 100%;
-    min-width: fit-content;
-    box-shadow: inset 5px 4px 5px black;
-}
-.feiten:hover {
-    background-color: #FFFF33;
-}
-h3 {
-    text-align: center;
-    font-weight: bolder;
-    font-size: xx-large;
-    border: 2px solid black;
-    background-color: black;
-    color: white;
-    padding: 1em;
-    border-color: blue;
-    min-width: fit-content;
-}
-h3:hover {
-    background-color: blue;
-    color: black;
-}
-strong {
-    font-size: x-large;
-}
-.footer {
-    background-color: black;
-    color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-     width: 100%;
-    text-align: center;
-    font-size: larger;
-    height: 1.6rem;         
-}
-</style>  
     </head>
 <body>
-    <div class="header">
-        <h1>Den Haag</h1>
+    <div class="header"><h1>Den Haag</h1>
       <div class="row"></div>
-</div>     
-  <div class="col-2"><section id="feiten">
+</div> 
+        
+  <div class="col-2" style="background-color: green;"><section id="feiten">
           <h3>5 feiten over Den Haag</h3>
     <div class="feiten"><strong>1.</strong> Haag was de eerste Europese stad met slimme verkeerslichten. In 1928 werden er op de kruising van de Laan van Meedervoort en de Anna Paulownastraat verkeerslichten geplaats.<br>
     Op het kruispunt gold een rode overlappingsperiode. In die tijd van zeven seconden stonden alle seinen op rood.
@@ -160,7 +39,7 @@ strong {
        </div></section>
   </div>
 
-  <div class="col-9">
+  <div class="col-9" style="background-color: black;">
          <article><div class="vredespaleis"><h2><u>Vredespaleis</u></h2>
     <a href="https://www.vredespaleis.nl/" target="_blank"><img src="img/Vredespakeis.jpg" alt="Vredespaleis" title="Vredespaleis"></a><p>2018 is het Europees Jaar van het Erfgoed. Een goede aanleiding om
         aandacht te besteden aan één van de meest iconische gebouwen in Den
@@ -189,6 +68,7 @@ strong {
         Tegenwoordig werkt hier koning Willem-Alexander. Als hij in het land is, wappert de vlag, de koninklijke standaard, op het paleis.</p>  
        </div></article>
   </div>
+  
   <div class="footer">© Copyright &nbsp;&nbsp; 2023 &nbsp;&nbsp; Farshad Kordi Todzil &nbsp;&nbsp; &nbsp;&nbsp; Alle rechten voorbehouden
         </div>
 </body>
