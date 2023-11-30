@@ -1,18 +1,13 @@
 [class*="col-"] {
     width: 100%;
 } 
-body {
-    background-color: red;
-} @media only screen and (min-width: 768px) {
-    body {
-        background-color: green;
-    }
+
     [class*="col-"] {
         float: left;
         padding: 15px;
         border: 2px solid black;
 } 
-}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -33,91 +28,102 @@ display: table;
 }
 
 body {
-font-family: 'Roboto', sans-serif;
-background-color: #00FF99;
+    font-family: 'Roboto', sans-serif;
+    background-color: #00FF99;
 }
 .header {
     box-sizing: border-box;
     border-radius: 10px;    
 } 
 h1 {
-background-image: url(../img/SkylineDenHaag1.jpg);
-background-size: contain;
-text-align: left;
-font-size: xx-large;
-color: white;
-text-shadow: 3px 4px 2px black;
-padding: 15px;
+    background-image: url(../img/SkylineDenHaag1.jpg);
+    background-size: contain;
+    text-align: left;
+    font-size: xx-large;
+    color: white;
+    text-shadow: 3px 4px 2px black;
+    padding: 15px;
 } 
 img {
-float: right;
-border-radius: 15px;
-padding: 5px;
-filter: drop-shadow(8px 9px 9px red);
-max-width: 50%;
+    float: right;
+    border-radius: 15px;
+    padding: 5px;
+    filter: drop-shadow(8px 9px 9px red);
+    max-width: 50%;
 }
 .vredespaleis {
-box-sizing: border-box;
-background-color: #FFFFCC;
-padding: 0;
-margin: 0;
-font-size: x-large;
-border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #FFFFCC;
+    padding: 0;
+    margin: 0;
+    font-size: x-large;
+    border-radius: 5px;
 }
 .paleis {
-box-sizing: border-box;
-background-color: #FFFFCC;
-padding: 0;
-margin: 0;
-font-size: x-large;
-border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #FFFFCC;
+    padding: 0;
+    margin: 0;
+    font-size: x-large;
+    border-radius: 5px;
 }
 article {
-box-sizing: border-box;
-border: 5px ridge black;
-padding: 1em;
-background-color: #FFFFCC;
+    box-sizing: border-box;
+    border: 5px ridge black;
+    padding: 1em;
+    background-color: #FFFFCC;
 }
 #feiten {
-background-color: black;
-min-width: fit-content;
-box-sizing: border-box;
+    background-color: black;
+    min-width: fit-content;
+    box-sizing: border-box;
 }
 .feiten {
-box-sizing: border-box;
-background-color: #FFFFCC;
-padding: 1em;
-margin: 0;   
-box-shadow: inset 5px 4px 5px black;
+    box-sizing: border-box;
+    background-color: #FFFFCC;
+    padding: 1em;
+    margin: 0;   
+    box-shadow: inset 5px 4px 5px black;
 }
 .feiten:hover {
-background-color: #FFFF33;
+    background-color: #FFFF33;
 }
 h3 {
-text-align: center;
-font-weight: bolder;
-font-size: xx-large;
-border: 2px solid black;
-background-color: black;
-color: white;
-padding: 1em;    
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 1em;    
 }
 h3:hover {
-background-color: blue;
-color: black;
+    background-color: blue;
+    color: black;
 }
 strong {
-font-size: x-large;
+    font-size: x-large;
 }
 .footer {
-box-sizing: border-box;
-background-color: black;
-color: white;
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-text-align: center;
-font-size: larger;
-height: 1.6rem;         
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    height: 1.6rem;         
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+    #feiten {
+        width: 100%;
+        background-color: blue;
+    }
 }
