@@ -1,28 +1,18 @@
 [class*="col-"] {
     width: 100%;
-}
-@media only screen and (max-width: 768px) {
-    body { background-color: green;
-}    
-}
+} 
 body {
-    background-color: #ECE5FF;
-} @media screen and (min-width: 768px) {
-    body { background-color: #00FF99;
-}    
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color: #00FF99;
-}
-
-[class*="col-"] {    
-    float: left;
-    padding: 25px;
-    width: 100%;
+    background-color: red;
+} @media only screen and (min-width: 768px) {
+    body {
+        background-color: green;
     }
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+        border: 2px solid black;
+} 
+}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -37,76 +27,97 @@ body {
 .col-12 {width: 100%;}
 
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
+content: "";
+clear: both;
+display: table;
 }
 
+body {
+font-family: 'Roboto', sans-serif;
+background-color: #00FF99;
+}
+.header {
+    box-sizing: border-box;
+    border-radius: 10px;    
+} 
+h1 {
+background-image: url(../img/SkylineDenHaag1.jpg);
+background-size: contain;
+text-align: left;
+font-size: xx-large;
+color: white;
+text-shadow: 3px 4px 2px black;
+padding: 15px;
+} 
 img {
-    float: right;
-    border-radius: 15px;
-    padding: 5px;
-    filter: drop-shadow(8px 9px 9px red);
-    max-width: 50%;
+float: right;
+border-radius: 15px;
+padding: 5px;
+filter: drop-shadow(8px 9px 9px red);
+max-width: 50%;
 }
 .vredespaleis {
-    background-color: #FFCCFF;
-    border: 2px solid black;
-    padding: 5px 25px 30px 20px;
-    margin: 5px 2px 40px 2px;
-    font-size: x-large;
-    border-radius: 5px;
+box-sizing: border-box;
+background-color: #FFFFCC;
+padding: 0;
+margin: 0;
+font-size: x-large;
+border-radius: 5px;
 }
 .paleis {
-    background-color: #FFCCFF;
-    border: 2px solid black;
-    padding: 5px 25px 30px 20px;
-    margin: 5px 2px 40px 2px; 
-    font-size: x-large;
-    border-radius: 5px;
+box-sizing: border-box;
+background-color: #FFFFCC;
+padding: 0;
+margin: 0;
+font-size: x-large;
+border-radius: 5px;
 }
 article {
-    border: 5px ridge black;
-    padding: 40px;
-    background-color: #009966;
+box-sizing: border-box;
+border: 5px ridge black;
+padding: 1em;
+background-color: #FFFFCC;
 }
-.weetjes {
-    background-color: #FFFFCC;
-    border: 2px solid black;
-    padding: 10px;
-    margin-bottom: 25px;
-    max-width: 100%;
-    max-height: 100%;
-    min-width: fit-content;
-    box-shadow: inset 5px 4px 5px black;
+#feiten {
+background-color: black;
+min-width: fit-content;
+box-sizing: border-box;
 }
-.weetjes:hover {
-    background-color: #FFFF33;
+.feiten {
+box-sizing: border-box;
+background-color: #FFFFCC;
+padding: 1em;
+margin: 0;   
+box-shadow: inset 5px 4px 5px black;
+}
+.feiten:hover {
+background-color: #FFFF33;
 }
 h3 {
-    text-align: center;
-    font-weight: bolder;
-    font-size: xx-large;
-    border: 2px solid black;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-color: blue;
-    min-width: fit-content;
+text-align: center;
+font-weight: bolder;
+font-size: xx-large;
+border: 2px solid black;
+background-color: black;
+color: white;
+padding: 1em;    
 }
 h3:hover {
-    background-color: blue;
-    color: black;
+background-color: blue;
+color: black;
 }
 strong {
-    font-size: x-large;
+font-size: x-large;
 }
 .footer {
-    background-color: black;
-    color: white;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    font-size: larger;
-    height: 2rem;           
+box-sizing: border-box;
+background-color: black;
+color: white;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+text-align: center;
+font-size: larger;
+height: 1.6rem;         
 }
